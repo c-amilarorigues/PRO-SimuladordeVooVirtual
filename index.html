@@ -17,7 +17,7 @@
     <a-scene background="color:#026F90" physics>
       <a-entity id="look" look-controls camera position="0 2 20"></a-entity>
 
-      <!--Asset Management-->
+      <!--Gestão de ativos-->
       <a-assets timeout="10000">
         <a-asset-item
           id="terrainMap"
@@ -30,7 +30,7 @@
         ></a-asset-item>
       </a-assets>
 
-      <!-- Terrain  -->
+      <!-- Terreno  -->
       <a-entity
         id="terrain"
         gltf-model="#terrainMap"
@@ -43,7 +43,7 @@
       >
       </a-entity>
 
-      <!-- Plane -->
+      <!-- Avião -->
       <a-entity
         id="plane_model"
         gltf-model="#plane"
@@ -56,19 +56,19 @@
       >
       </a-entity>
 
-      <!-----------------------------------Game Timer and Score------------------------------------------>
+      <!-----------------------------------Tempo de Jogo e Pontuação------------------------------------------>
       <a-entity id="header" position="1 -4 0">
         <!-- Title -->
         <a-entity
           position="-28.5 21.5 0"
-          text="font: exo2bold; align: center; width: 40; color: black; value: VIRTUAL FLIGHT"
+          text="font: exo2bold; align: center; width: 40; color: black; value: VÔO VIRTUAL"
         ></a-entity>
 
-        <!-- Timer -->
+        <!-- Temporizador -->
         <a-entity position="-23.5 19.3 0">
           <a-entity
             position="-1.5 0.07 0"
-            text="font: aileronsemibold; width: 12; color: black; value: TIME\nREMAINING"
+            text="font: aileronsemibold; width: 12; color: black; value: TEMPO\nRESTANTE"
           ></a-entity>
           <a-entity
             id="timer"
@@ -77,11 +77,11 @@
           ></a-entity>
         </a-entity>
 
-        <!-- Traget Status -->
+        <!-- Status do alvo -->
         <a-entity position="-18 19.3 0">
           <a-entity
             position="-0.6 0.13 0"
-            text="font: aileronsemibold; width: 12; color: black; value: TRAGETS\nREMAINING"
+            text="font: aileronsemibold; width: 12; color: black; value: ALVOS\nRESTANTES"
           ></a-entity>
           <a-entity
             id="targets"
@@ -90,11 +90,11 @@
           ></a-entity>
         </a-entity>
 
-        <!-- Score -->
+        <!-- Pontuação -->
         <a-entity position="30.5 21.5 0">
           <a-entity
             position=""
-            text="font: exo2bold; align: center; width: 40; color: black; value: SCORE"
+            text="font: exo2bold; align: center; width: 40; color: black; value: PONTUAÇÃO"
           ></a-entity>
           <a-entity
             id="score"
@@ -104,11 +104,11 @@
         </a-entity>
       </a-entity>
 
-      <!------------------------------------Game Over-------------------------------->
+      <!------------------------------------Fim de Jogo-------------------------------->
       <a-entity
         id="game_over_text"
         position="0 7.5 0"
-        text="font: exo2bold; align: center; width: 100; color: white;value: Game Over!!!"
+        text="font: exo2bold; align: center; width: 100; color: white;value: Fim de Jogo!!!"
         visible="false"
       ></a-entity>
     </a-scene>
